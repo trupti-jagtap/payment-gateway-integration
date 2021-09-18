@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>SpreadHappiness</title>
+    <style>
+        .carousel-item:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .carousel-caption {
+            z-index: 1;
+        }
+
+        .divborder {
+            border-style: solid;
+            border-width: thin;
+            border-color: #050047;
+        }
+
+        .quote {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            padding: 15px 40px 60px 80px;
+            color: #042454;
+        }
+
+        .btnstyle {
+            background-color: #042454;
+            color: white;
+            width: 100px;
+            align-self: center;
+            outline-color: aliceblue;
+            border: aquamarine;
+        }
+
+        .navstyle {
+            color: #ffffff;
+            background-color: #042454;
+
+        }
+
+        .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navstyle ">
+        <div class="container-fluid">
+            <b><a class="navbar-brand nav-link" href="index.html">Spread Happieness Fundraiser </a></b>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-house-fill" viewBox="1 1 16 16">
+                                <path fill-rule="evenodd"
+                                    d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                            </svg> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="About_us.html"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" fill="currentColor" class="bi bi-people-fill" viewBox="1 1 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                <path fill-rule="evenodd"
+                                    d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                            </svg> About us </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="1000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="Image2.jpg" class="d-block w-100" alt="..." height="600px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>You don't fundraise for profit.
+                        Nor do we.</h1>
+
+
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="Image1.jpg" class="d-block w-100" alt="..." height="600px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>...and because you give everything,
+                        we take nothing.</h1>
+
+
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="Image3.jpg" class="d-block w-100" alt="..." height="600px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>SPREAD HAPPIENESS - FUND RAISER </h1>
+                    <p>Spark Foundation</p>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <div class="container divborder" style="height: 300px;width: 1000px;background-color: rgb(212, 230, 236);">
+        <h1 class="quote">“We ourselves feel that what we are doing is just a drop in the ocean. But the ocean would be
+            less because
+            of that missing drop.” </h1>
+
+        <h3 style="text-align: center;"><i>-Mother Teresa</i></h3>
+    </div>
+    <br>
+    <br>
+    <h2 style="text-align: center;color: #963657;">How can you help us?</h2>
+    <br>
+    <div class="container" style="width: 900px;text-align:start;align-self: center;">
+        <h5 style="font-weight:normal;">
+            <p>According to a CRY report over 99 million children in India drop out of school
+                at a young age.
+                This means that at least 1 out of every 4 children doesn’t get proper primary education.
+                Only about 32 children out of every 100 children complete the necessary schooling and
+                only 2% of schools in India offer complete schooling from class I to class XII.
+                While public schools lack resources and infrastructure, the ever-increasing cost
+                of private schools prevents most children from receiving proper education.</p>
+            <br>
+            <p>
+                We, at Spread Happiness Fundraiser, believe that education shouldn’t just be a privilege of the few but
+                a
+                fundamental right for all. Thus, it is our aim to empower non-profits and individuals
+                through education crowdfunding. Crowdfunding is an easy way of fundraising where you can
+                raise money online by sharing your fundraiser with supporters, donors and millions of
+                well-wishers to pool in funds. Education crowdfunding also helps individuals who can’t
+                afford basic or higher education without an education loan.</p>
+        </h5>
+        <p style="text-align: center;font-weight: bold;">Click on the button to help</p>
+    </div>
+    <br>
+    <form style="text-align: center;">
+        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HyEVqefo3r0I4P"
+            async> </script>
+
+    </form>
+
+    <br>
+    <br>
+    <div class="container text-dark d-flex justify-content-around "
+        style="background-color: rgb(212, 230, 236);width: 1000px;">
+
+        <form style="width: 600px;">
+            <br>
+            <h4 style="text-align: center;text-decoration: darkblue;">Contact us</h4>
+            <br>
+            <div class="row mb-8">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label-lg ">Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="colFormLabelLg" placeholder="Enter name" name="Year"
+                        type="number ">
+                </div>
+            </div>
+
+            <div class="row mb-8 ">
+                <label for="colFormLabelLg2" class="col-sm-4 col-form-label-lg ">Email</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="colFormLabelLg2" placeholder="Enter email"
+                        required="required">
+                </div>
+
+            </div>
+            <div class="row mb-8 ">
+                <label for="colFormLabelLg2" class="col-sm-4 col-form-label-lg ">Message</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btnstyle">Send</button>
+            <div>
+                <br>
+            </div>
+
+
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-muted">
+                <b>Spread Fundraiser Happiness</b><br>
+                Spark Foundation Project<br>
+                Created by Trupti Jagtap<br>
+
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
